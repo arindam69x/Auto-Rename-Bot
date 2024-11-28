@@ -4,25 +4,23 @@ id_pattern = re.compile(r'^.\d+$')
 class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "19863702")
+    API_HASH  = os.environ.get("API_HASH", "6d48cb362a97a43cfc944fd5c0f917f9")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6461620240:AAHLDYrSNbjZEeYqi-opltYlVfbVYrtdSFo") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AshutoshGoswami24")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","madflixbotz")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://kxzn980:kishan@cluster0.tu0fpes.mongodb.net/")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    # -- FORCE_SUB_CHANNELS = ["BotzPW","AshuSupport","AshutoshGoswami24"] -- # 
-    FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', 'AshutoshGoswami24,BotzPW').split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    PORT = int(os.environ.get("PORT", ""))
+    START_PIC   = os.environ.get("START_PIC", "https://telegra.ph/file/016348fd53de0b3743dfd.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6304277259').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002078741043") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002102344831"))
     
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
-
 
 class Txt(object):
     # part of text configuration
