@@ -3,7 +3,6 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
     API_ID    = os.environ.get("API_ID", "19863702")
     API_HASH  = os.environ.get("API_HASH", "6d48cb362a97a43cfc944fd5c0f917f9")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "6461620240:AAHLDYrSNbjZEeYqi-opltYlVfbVYrtdSFo") 
